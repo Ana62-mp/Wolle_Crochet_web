@@ -1,40 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Onest&family=Raleway:ital@0;1&display=swap');
 
 
+/* --- 0. Definición de Clases de Fuente --- */
 .neonderthaw-regular {
-  font-family: "Neonderthaw", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .raleway-regular {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .raleway-extraBold {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .onest-regular {
-  font-family: "Onest", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .onest-bold {
-  font-family: "Onest", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
+
+/* --- 1. Estilos Generales y Reseteo --- */
 * {
     margin: 0;
     padding: 0;
@@ -45,12 +48,14 @@ body {
     font-family: "Onest", sans-serif; 
 }
 
-.container, .navbar {
+.container {
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 0 20px;
 }
 
+
+/* --- 2. Sección Principal (Hero) --- */
 .hero-section {
     height: 100vh; 
     display: flex;
@@ -74,14 +79,21 @@ body {
     z-index: 1; 
 }
 
+
+/* --- 3. Barra de Navegación (Header)  --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    color: white; 
-    z-index: 2; 
+    position: sticky; 
+    top: 0;
+    width: 100%; 
+    z-index: 10; 
+    background-color: rgba(88, 71, 56, 0.80);
+    padding: 20px 40px; 
+    color: #F1EADA; 
 }
+
 
 .logo {
     display: flex;
@@ -90,12 +102,11 @@ body {
 }
 
 .logo img {
-    height: 40px;
-    
+    height: 60px;
 }
 
 .logo h1 {
-    font-size: 2em; 
+    font-size: 2.5em; 
     font-weight: 400;
 }
 
@@ -107,16 +118,17 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #F1EADA;
     transition: color 0.3s;
     font-size: 1.1em;
 }
 
 .nav-links a:hover {
-    color: #e0e0e0; 
+    color: #2e2222; 
 }
 
 
+/* --- 4. Contenido Central (Hero) --- */
 .hero-content {
     flex-grow: 1; 
     display: flex;
@@ -129,27 +141,22 @@ body {
 }
 
 .main-title {
-    font-size: 8em;
-    color: white;
-    line-height: 1.1;
-    letter-spacing: 2px;
-    
-    text-shadow: 
-        -1px -1px 0 #fff,  
-         1px -1px 0 #fff,
-        -1px  1px 0 #fff,
-         1px  1px 0 #fff;
+    font-size: 12em;
+    color: #F1EADA;
+    line-height: 1.1;    
+   
 }
 
 .subtitle {
     font-size: 1.8em;
-    color: white;
+    color: #F1EADA;
     font-weight: 400; 
     margin-top: 10px;
     letter-spacing: 5px;
 }
 
 
+/* --- 5. Info Grid Section --- */
 .info-grid-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,7 +175,7 @@ body {
     background-position: center;
 }
 
-
+/* URLs de las imágenes */
 .cell-image-top {
     background-image: url('./img/1ra.jpg'); 
 }
@@ -178,29 +185,31 @@ body {
 }
 
 .cell-text-top {
-    background-color: #f7f1e7; 
+    background-color: #F1EADA; 
+    color: #584738; 
 }
 
 .cell-text-bottom {
     background-color: #CEC1A8; 
-    color: white;
+    color: #584738;
 }
 
-
+/* Tipografía y Botones */
 .title-large {
     font-size: 4.5em; 
     margin-bottom: 5px;
     line-height: 1;
-    color: #4c3c2e; 
+    color: #584738; 
 }
 
 .cell-text-bottom .title-large {
-    color: white; 
+    color: #584738; 
 }
 
 .subtitle-small {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #584738;
 }
 
 .body-text {
@@ -223,45 +232,40 @@ body {
 }
 
 .btn-dark {
-    /* Botón color café oscuro */
-    background-color: #715844; 
-    color: white;
-    font-weight: 600; /* Puedes usar un peso diferente de Raleway si quieres */
+    background-color: #6E5647; 
+    color: #F1EADA;
+    font-weight: 600; 
 }
 
 .btn-dark:hover {
     background-color: #5d493a;
 }
 
+/* --- 6. Productos Destacados Section --- */
 .productos-destacados-section {
     padding: 60px 0; 
     background-color: #f7f1e7; 
     min-height: 50vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 .seccion-header {
     text-align: center;
     margin-bottom: 50px;
-    color: #4c3c2e;
+    color: #584738;
 }
 
 .header-pre-title {
     font-size: 1.5em;
     display: block;
     margin-bottom: -5px; 
+    color: #584738;
 }
 
 .title-main {
     font-size: 4em;
     line-height: 1;
 }
-
 
 .galeria-grid {
     display: flex; 
@@ -291,6 +295,7 @@ body {
 }
 
 
+/* --- 7. Blog Hero Section (Solapamiento) --- */
 .blog-hero-section {
     position: relative; 
     height: 70vh; 
@@ -303,7 +308,7 @@ body {
 .blog-module {
     width: 550px;
     max-width: 90%;
-    background-color: #beb399; 
+    background-color: #AAA396; 
     border-radius: 20px;
     padding: 40px;
     position: absolute;
@@ -314,24 +319,26 @@ body {
 }
 
 .blog-module .title-main {
-    font-size: 3.5em; 
-    color: #4c3c2e;
+    font-size: 4em; 
+    color: #584738;
+    margin-bottom: 5%;
 }
 
 .blog-module .subtitle-small {
-    color: #4c3c2e;
+    color: #584738;
 }
 
 .blog-module .blog-text {
     margin-bottom: 30px;
-    color: #4c3c2e;
+    color: #584738;
 }
 
 
+/* --- 8. Pie de Página (Footer) --- */
 .main-footer {
-    background-color: #715844; /* Color café oscuro */
+    background-color: #584738; 
     color: white;
-    padding-top: 150px; 
+    padding-top: 50px; 
     padding-bottom: 20px;
     position: relative;
     z-index: 0; 
@@ -359,19 +366,17 @@ body {
     line-height: 1.5;
 }
 
-
 .logo-column {
     flex-basis: 25%; 
     text-align: center;
 }
 
 .footer-oso {
-    width: 150px; 
+    width: 250px; 
     height: auto;
-    margin-top: -100px; 
+    margin-top: -35px; 
     margin-left: -20px;
 }
-
 
 .social-icons {
     display: flex;
@@ -397,4 +402,3 @@ body {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
