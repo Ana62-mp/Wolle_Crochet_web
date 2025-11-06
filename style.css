@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Onest&family=Raleway:ital@0;1&display=swap');
+
+
+.neonderthaw-regular {
+  font-family: "Neonderthaw", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-extraBold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.onest-regular {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.onest-bold {
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Onest", sans-serif; 
+}
+
+.container, .navbar {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.hero-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #79553c;
+    background-image: url('./img/inicio2.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    color: white; 
+    z-index: 2; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    
+}
+
+.logo h1 {
+    font-size: 2em; 
+    font-weight: 400;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    color: #e0e0e0; 
+}
+
+
+.hero-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 8em;
+    color: white;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}
+
+.subtitle {
+    font-size: 1.8em;
+    color: white;
+    font-weight: 400; 
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+
+.info-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; 
+    height: 90vh; 
+    width: 100%;
+    overflow: hidden; 
+}
+
+.info-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cell-image-top {
+    background-image: url('./img/1ra.jpg'); 
+}
+
+.cell-image-bottom {
+    background-image: url('./img/2da.jpg');
+}
+
+.cell-text-top {
+    background-color: #f7f1e7; 
+}
+
+.cell-text-bottom {
+    background-color: #CEC1A8; 
+    color: white;
+}
+
+
+.title-large {
+    font-size: 4.5em; 
+    margin-bottom: 5px;
+    line-height: 1;
+    color: #4c3c2e; 
+}
+
+.cell-text-bottom .title-large {
+    color: white; 
+}
+
+.subtitle-small {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.body-text {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 400px; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-dark {
+    /* Botón color café oscuro */
+    background-color: #715844; 
+    color: white;
+    font-weight: 600; /* Puedes usar un peso diferente de Raleway si quieres */
+}
+
+.btn-dark:hover {
+    background-color: #5d493a;
+}
+
+.productos-destacados-section {
+    padding: 60px 0; 
+    background-color: #f7f1e7; 
+    min-height: 50vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seccion-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4c3c2e;
+}
+
+.header-pre-title {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: -5px; 
+}
+
+.title-main {
+    font-size: 4em;
+    line-height: 1;
+}
+
+
+.galeria-grid {
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.galeria-item {
+    flex: 1 1 30%; 
+    max-width: 350px; 
+    text-align: center;
+}
+
+.imagen-wrapper {
+    background-color: white;
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.imagen-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px; 
+}
+
+
+.blog-hero-section {
+    position: relative; 
+    height: 70vh; 
+    background-image: url('./img/blog.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-color: #715844; 
+}
+
+.blog-module {
+    width: 550px;
+    max-width: 90%;
+    background-color: #beb399; 
+    border-radius: 20px;
+    padding: 40px;
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    
+}
+
+.blog-module .title-main {
+    font-size: 3.5em; 
+    color: #4c3c2e;
+}
+
+.blog-module .subtitle-small {
+    color: #4c3c2e;
+}
+
+.blog-module .blog-text {
+    margin-bottom: 30px;
+    color: #4c3c2e;
+}
+
+
+.main-footer {
+    background-color: #715844; /* Color café oscuro */
+    color: white;
+    padding-top: 150px; 
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    padding: 0 10px;
+}
+
+.footer-column h4 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+
+.logo-column {
+    flex-basis: 25%; 
+    text-align: center;
+}
+
+.footer-oso {
+    width: 150px; 
+    height: auto;
+    margin-top: -100px; 
+    margin-left: -20px;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9c8a74; 
+}
+
+.social-note {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+.copyright-bar {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
